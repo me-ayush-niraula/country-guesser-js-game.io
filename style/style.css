@@ -1,0 +1,127 @@
+/* common style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-family: "ZCOOL KuaiLe", cursive;
+  color: rgb(63, 63, 63);
+  font-size: 110%;
+}
+body {
+  /* background pattern of site using magic patter */
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(#c5c5c5 0.5px, transparent 0.5px),
+    radial-gradient(#c5c5c5 0.5px, #ffffff 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+/* navigation with logo and github */
+.navigation {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 10px;
+  text-align: center;
+}
+.github a,
+.aboutMe a,
+.portfolio a {
+  text-decoration: none;
+  color: black;
+}
+
+.github a:hover,
+.aboutMe a:hover,
+.portfolio a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.logo:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* main guessing content */
+
+/* left */
+
+.mainGuessArea {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 85vh;
+  align-items: center;
+  margin-top: 40px;
+}
+.revealContent {
+  text-align: center;
+}
+.revealContent img {
+  border: 3px solid black;
+}
+
+.revealContent button {
+  width: 180px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  font-family: "ZCOOL KuaiLe", cursive;
+}
+
+.pictureSelect {
+  margin-left: 100px;
+}
+/* right */
+.guessedContent {
+  text-align: center;
+}
+.inputCountryHere {
+  height: 50px;
+  width: 300px;
+  border: black solid 3px;
+  font-size: 35px;
+  text-align: center;
+  font-family: "ZCOOL KuaiLe", cursive;
+}
+.guessButton,
+.resetButton {
+  background: none;
+  height: 30px;
+  width: 150px;
+  font-size: 20px;
+  font-family: "ZCOOL KuaiLe", cursive;
+  margin-left: 2px;
+}
+.guessButton:hover,
+.resetButton:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.resetButton a {
+  text-decoration: none;
+}
+
+/* score */
+.realScore {
+  color: green;
+  font-size: 50px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+
+/* blog, about and portfolio */
+.abouth1,
+.blogh1,
+.portfolioh1 {
+  margin-top: 25%;
+  text-align: center;
+}

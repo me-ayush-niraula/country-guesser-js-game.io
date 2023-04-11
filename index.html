@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Guesser</title>
+    <!-- linking style file -->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- linking google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=ZCOOL+KuaiLe&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!------- navigation ------->
+    <div class="navigation">
+      <div class="logo">
+        <b><u>Country Guesser v1.0</u></b>
+      </div>
+      <div></div>
+      <div></div>
+      <div class="portfolio">
+        <a href="portfolio.html" target="_blank">Portfolio</a>
+      </div>
+      <div class="github">
+        <a href="blog.html" target="_blank">Blog</a>
+      </div>
+
+      <div class="aboutMe">
+        <a href="about.html" target="_blank">About</a>
+      </div>
+    </div>
+
+    <!------- guess area ------->
+    <div class="mainGuessArea">
+      <div class="revealContent">
+        Country's Continent:
+        <button class="continentRevealButton">Reveal</button> <br /><br />
+        Famous For: <button class="famousRevealButton">Reveal</button>
+        <br /><br />
+        Country Capital: <button class="capitalRevealButton">Reveal</button>
+        <br /><br />
+
+        <img
+          src="#"
+          width="200px"
+          height="200px"
+          class="pictureSelect"
+        /><br /><br />
+        <button class="pictureRevealButton">Reveal</button>
+      </div>
+      <div class="guessedContent">
+        <h1>Country Guesser</h1>
+        <br />
+        <u>Rules</u><br /><br />
+        Try your luck guessing country. But do not worry you can always reveal
+        country's continent, what this country is famous for and country's
+        capital. You have to give up some points in order reveal every single
+        facts.You can also reveal the flag giving up five points.This is a very
+        minor game i tried to create in order to grasp some basic fundmentals of
+        JavaScript. Enjoy the game😁<br /><br />
+
+        <input type="text" class="inputCountryHere" /><br /><br />
+        <button class="guessButton">Guess!!!</button
+        ><a href="index.html"> <button class="resetButton">Reset</button></a
+        ><br /><br />
+        <p class="hint">Start Guessing...</p>
+        <br /><br />
+        💯Socre:<b> <p class="realScore"></p></b>
+        <br />
+      </div>
+    </div>
+    <!------- footer ------->
+    <footer>
+      Made with Code
+      <a href="https://github.com/a-niraula56" target="_blank">@Github </a>
+    </footer>
+
+    <!-- linking script file -->
+    <script src="script/script.js"></script>
+    <!-- confetti libraby of javascript -->
+    <script src="script/confetti.js"></script>
+  </body>
+</html>
